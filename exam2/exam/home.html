@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Home</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+        </head>
+    <body>
+        <div class="container">
+            <h1> Home </h1>
+            <p>Hello, Jovan Kichev</p>
+            
+            <h2>Personal Informations</h2>
+            
+            <table style="width:100%">
+                <tr>
+                    <th>Name</th>
+                    <td colspan="2"> Jovan</td>
+                </tr>
+                <tr>
+                    <th>Last Name</th>
+                    <td colspan="2">Kichev</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td colspan="2">Samoilova 3</td>
+                </tr>
+               
+            </table>
+
+            <h2>Student Informations</h2>
+            
+            <table style="width:100%">
+                <tr>
+                    <th>Semester</th>
+                    <td colspan="2"> 5</td>
+                </tr>
+                <tr>
+                    <th>Enrollment Date</th>
+                    <td colspan="2">14 November 2019</td>
+                </tr>
+                <tr>
+                    <th>Passed Exams</th>
+                    <td colspan="2">20</td>
+                </tr>
+               
+            </table>
+
+            <h2>Passed Exams:</h2>
+            
+            <ul>
+                <li>
+                    Programming 1 
+                </li>
+                <li>
+                    Programming 2
+                </li>
+                <li>
+                    Programming 3 
+                </li>
+                <li>
+                    Programming 4
+                </li>
+                <li>
+                    Programming 5 
+                </li>
+                <li>
+                    Programming 6
+                </li>
+                <li>
+                    Programming 7
+                </li>
+                <li>
+                    Programming 8
+                </li>
+                <li>
+                    Programming 9 
+                </li>
+                <li>
+                    Programming 10
+                </li>
+                <li>
+                    Programming 11
+                </li>
+                <li>
+                    Programming 12
+                </li>
+                <li>
+                    Programming 13
+                </li>
+                <li>
+                    Programming 14
+                </li>
+                <li>
+                    Programming 15
+                </li>
+                <li>
+                    Programming 16
+                </li>
+                <li>
+                    Programming 17
+                </li>
+                <li>
+                    Programming 18
+                </li>
+                <li>
+                    Programming 19
+                </li>
+                <li>
+                    Programming 20
+                </li>
+            </ul>
+
+            <h2>Courses still not taken:</h2>
+            
+            <select name="nottaken" style="width: 100%;padding: 15px;">
+                <option value="subject1">Multimedia</option>
+                <option value="subject2">Multimedia 2</option>
+                <option value="subject3">Discrete mathematics 1</option>
+                <option value="subject4">Discrete mathematics 2</option>
+                <option value="subject5">3d Course</option>
+                <option value="subject6">Web Programming</option>
+                <option value="subject7">Data Structures</option>
+            </select>
+            <button class="sub-btn" onclick="apply()">
+                Apply for this course
+            </button>
+            <p id="apply">
+                
+            </p>
+
+            <div class="exam-application-form">              
+
+                    <h3 style="margin-top: 8rem; text-align: center">STUDENT REGISTRATION FORM</h3>
+
+ 
+                    <table align="center" cellpadding = "10">
+                     
+                    <!----- First Name ---------------------------------------------------------->
+                    <tr>
+                    <td>FIRST NAME</td>
+                    <td><input type="text" name="First_Name" maxlength="30"/>
+                    (max 30 characters a-z and A-Z)
+                    </td>
+                    </tr>
+                     
+                    <!----- Last Name ---------------------------------------------------------->
+                    <tr>
+                    <td>LAST NAME</td>
+                    <td><input type="text" name="Last_Name" maxlength="30"/>
+                    (max 30 characters a-z and A-Z)
+                    </td>
+                    </tr>
+                     
+                    <!----- Email Id ---------------------------------------------------------->
+                    <tr>
+                    <td>EMAIL ID</td>
+                    <td><input type="text" name="Email_Id" maxlength="100" /></td>
+                    </tr>
+                     
+                    <!----- Mobile Number ---------------------------------------------------------->
+                    <tr>
+                    <td>Name of course</td>
+                    <td>
+                    <input type="text" name="data" maxlength="10" />
+                    Data Structures
+                    </td>
+                    </tr>
+                     
+                    <!----- Course ---------------------------------------------------------->
+                    <tr>
+                    <td>Do you want to confirm application</td>
+                        <td>
+                        YES<br>
+                            <input type="radio" name="app" value="yes">
+                        No<br>
+                            <input type="radio" name="app" value="no">
+                        </td>
+                    </tr>
+                     
+                    <!----- Submit and Reset ------------------------------------------------->
+                    <tr>
+                        <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                    </table>
+                     
+                    </form>
+
+
+            </div>
+
+        </div>
+
+        <script>
+            function apply() {
+                let vali = document.getElementById('apply');
+                vali.value = 'Successfully APPLIED'
+            }
+        </script>
+    </body>
+</html>
